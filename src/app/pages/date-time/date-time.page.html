@@ -1,0 +1,18 @@
+<app-header titulo="DateTime"></app-header>
+
+<ion-content>
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Fecha de nacimiento</ion-label>
+    </ion-list-header>
+    <ion-item>
+      <ion-datetime [showDefaultButtons]="true" display-format="DD MM YYYY" (ionChage)="cambioFecha( $event )"></ion-datetime>
+    </ion-item>
+    <ion-list-header>
+      <ion-label>Restricciones</ion-label>
+    </ion-list-header>
+    <ion-item>
+      <ion-datetime [showDefaultButtons]="true" display-format="DD MM YYYY" min="2015-01-01" max="2025-12-31"></ion-datetime>
+    </ion-item>
+  </ion-list>
+</ion-content>
